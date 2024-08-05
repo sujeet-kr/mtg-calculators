@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            html {
+                overflow: hidden;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            iframe {
+                max-width: 100%;
+            }
+        </style>
+        <title>Page Title</title>
+    </head>
+
+    <body>
+        <!-- <div id="mortgage-calculator" class="calculator-mortgage calculator-vertical calculator-mobile"
+            style="color: rgb(226, 221, 221); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">
+            <div class="calculator-title" style="color: rgb(4, 4, 4);">Mortgage Payment Calculator</div>
+            <form>
+                <div class="calculator-row">
+                    <i alt="What type of simulation you want to run" style="background-color: rgb(109, 11, 162);">i</i>
+                    <label><b>Calculate what?</b>
+                        <select name="type" style="color: rgb(4, 4, 4); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">
+                            <option value="payment">Payment</option>
+                            <option value="amount">Mortgage Amount</option>
+                            <option value="amortization">Amortization</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="calculator-row calculator-amount">
+                    <i alt="The amount of money you will be borrowing to purchase your home"
+                        style="background-color: rgb(109, 11, 162);">i</i>
+                    <label><b>Mortgage Amount</b>$
+                        <input type="text" name="amount" size="10" style="color: rgb(4, 4, 4); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">
+                    </label>
+                </div>
+                <div class="calculator-row calculator-amortization">
+                    <i alt="The actual number of years it will take for you to repay your mortgage in full"
+                        style="background-color: rgb(109, 11, 162);">i</i>
+                    <label><b>Amortization</b>years
+                        <input type="text" name="amortization" size="6">
+                    </label>
+                </div>
+                <div class="calculator-row calculator-payment" style="display: none;">
+                    <i alt="The actual amount you will be paying on a regular basis to reduce your mortgage"
+                        style="background-color: rgb(109, 11, 162);">i</i>
+                    <label><b>Payment</b>$
+                        <input type="text" name="payment" size="8" style="color: rgb(4, 4, 4); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">
+                    </label>
+                </div>
+                <div class="calculator-row">
+                    <i alt="How often you will be making your payments to your mortgage"
+                        style="background-color: rgb(109, 11, 162);">i</i>
+                    <label><b>Payment Frequency</b>
+                        <select name="frequency" style="color: rgb(4, 4, 4); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">
+                            <option value="monthly">Monthly</option>
+                            <option value="semimonthly">Semi-Monthly</option>
+                            <option value="biweekly">Bi-Weekly</option>
+                            <option value="weekly">Weekly</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="calculator-row">
+                    <i alt="The desired term for the mortgage" style="background-color: rgb(109, 11, 162);">i</i>
+                    <label><b>Product</b>
+                        <select name="product" style="color: rgb(4, 4, 4); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">
+                            <option value="custom">Custom Rate</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="calculator-row">
+                    <i alt="That percent of interest that you will be paying on the mortgage for a specific term"
+                        style="background-color: rgb(109, 11, 162);">i</i>
+                    <label><b>Interest rate</b>%
+                        <input type="text" name="interest" size="6" style="color: rgb(4, 4, 4); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;">
+                    </label>
+                </div>
+                <div class="calculator-row">
+                    <label><b id="calculator-mortgage-type">Monthly Payment</b>
+                        <div id="calculator-mortgage-result" style="color: rgb(226, 221, 221);"></div>
+                    </label>
+                </div>
+            </form>
+            <div class="calculator-chart">Loading chart...</div>
+        </div> -->
+
+
+
+        <div id="mortgage-calculator" class="calculator-mortgage calculator-vertical calculator-mobile"
+            style="color: rgb(226, 221, 221); font-family: Tahoma, Geneva, sans-serif; font-size: 14px;"></div>
+        <noscript>To view the mortgage calculator you must have JavaScript turned on</noscript>
+        <!-- <script type="text/javascript" src="https://home.ca/static/js/calculators.js" defer="defer"></script> -->
+        <script type="text/javascript" src="calculators.js" defer="defer"></script>
+        <script type="text/javascript">
+            var mortgageCalculator = {
+                container: 'mortgage-calculator',
+                colorText: '#e2dddd',
+                colorTotal: '#e2dddd',
+                colorInfo: '#6d0ba2',
+                colorSelectText: '#ffffff',
+                fontFamily: 'Tahoma, Geneva, sans-serif',
+                fontSize: '14',
+                income: '5000',
+                propertyTaxes: '',
+                condoFees: '',
+                heatingCost: '',
+                loans: '',
+                downPayment: '10000',
+                layout: 'vertical'
+            }
+        </script>
+        <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+
+
+    </body>
+
+</html>

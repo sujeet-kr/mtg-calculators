@@ -1,0 +1,198 @@
+.calculator-mortgage,
+.calculator-ownership,
+.calculator-affordability {
+    max-width: 1200px;
+    font-family: sans-serif
+}
+
+.calculator-mortgage form,
+.calculator-affordability form,
+.calculator-ownership form {
+    display: block;
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 0
+}
+
+.calculator-mortgage form {
+    max-width: 400px
+}
+
+.calculator-ownership form {
+    max-width: 500px
+}
+
+.calculator-mortgage strong,
+.calculator-affordability strong,
+.calculator-ownership strong {
+    display: block;
+    margin-bottom: 10px
+}
+
+.calculator-title {
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+    border-bottom: 1px #ddd solid;
+    font-size: 1.5em
+}
+
+.calculator-title.calculator-logo {
+    text-align: right
+}
+
+.calculator-title.calculator-logo img {
+    float: left;
+    max-height: 60px
+}
+
+.calculator-mortgage .calculator-row,
+.calculator-affordability .calculator-row,
+.calculator-ownership .calculator-row {
+    padding: 10px 0;
+    text-align: right;
+    border-top: 1px #eee solid
+}
+
+.calculator-row:first-child {
+    border-top: none
+}
+
+.calculator-mortgage i,
+.calculator-affordability i,
+.calculator-ownership i {
+    display: inline-block;
+    float: left;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin-right: 10px;
+    font: 16px Georgia, serif;
+    background-color: #d81e05;
+    text-align: center;
+    color: #fff;
+    cursor: help;
+    border-radius: 16px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px
+}
+
+.calculator-row label {
+    display: block
+}
+
+.calculator-row label b {
+    display: inline-block;
+    float: left;
+    font-weight: 400
+}
+
+.calculator-row select,
+.calculator-row input {
+    padding: 2px 4px;
+    border: 1px #666 solid;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    text-align: right;
+    color: inherit
+}
+
+.calculator-row select option {
+    text-align: left
+}
+
+#calculator-mortgage-type {
+    padding-top: .6em;
+    font-weight: 700
+}
+
+#calculator-mortgage-result {
+    font-size: 2em;
+    font-weight: 700;
+    color: #c00
+}
+
+.calculator-affordability .calculator-chart label strong {
+    margin-bottom: 0;
+    font-size: 1.5em;
+    color: #c00
+}
+
+.calculator-mortgage .calculator-chart,
+.calculator-affordability .calculator-chart,
+.calculator-ownership .calculator-chart {
+    overflow: hidden;
+    min-height: 300px;
+    margin: 0;
+    padding: 0
+}
+
+.calculator-affordability .calculator-chart {
+    padding-left: 50px
+}
+
+.calculator-affordability .calculator-chart strong {
+    display: block
+}
+
+.calculator-affordability .calculator-chart span {
+    padding-left: 10px
+}
+
+.calculator-ownership-result {
+    overflow: hidden;
+    padding-left: 20px
+}
+
+.calculator-mortgage .calculator-footer,
+.calculator-affordability .calculator-footer,
+.calculator-ownership .calculator-footer {
+    clear: both;
+    padding-top: .5em;
+    border-top: 1px #ddd solid
+}
+
+.calculator-mortgage .calculator-footer a,
+.calculator-affordability .calculator-footer a,
+.calculator-ownership .calculator-footer a {
+    text-decoration: none
+}
+
+.calculator-mortgage .calculator-footer .calculator-link,
+.calculator-affordability .calculator-footer .calculator-link,
+.calculator-ownership .calculator-footer .calculator-link {
+    float: right
+}
+
+.calculator-mortgage.calculator-mobile form,
+.calculator-mortgage.calculator-vertical form,
+.calculator-affordability.calculator-mobile form,
+.calculator-affordability.calculator-vertical form,
+.calculator-ownership.calculator-mobile form,
+.calculator-ownership.calculator-vertical form {
+    float: none;
+    width: 100%;
+    max-width: none
+}
+
+.calculator-mortgage.calculator-mobile .calculator-chart,
+.calculator-affordability.calculator-mobile .calculator-chart,
+.calculator-ownership.calculator-mobile .calculator-chart {
+    padding: 0;
+    width: 100%
+}
+
+#calculator-tooltip {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    max-width: 400px;
+    padding: 5px 10px;
+    border: 1px #999 solid;
+    z-index: 999;
+    font: 14px sans-serif;
+    color: #000;
+    background-color: #ffe
+}
