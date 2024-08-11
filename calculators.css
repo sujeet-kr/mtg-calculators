@@ -190,9 +190,8 @@
     left: 10px;
     max-width: 400px;
     padding: 5px 10px;
-    border: 1px #999 solid;
     z-index: 999;
     font: 14px sans-serif;
-    color: #000;
-    background-color: #ffe
+    color: #5e5b5b;
+    background-color: rgb(212, 216, 223)
 }

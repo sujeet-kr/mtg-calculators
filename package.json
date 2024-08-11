@@ -1,5 +1,9 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "minify": "^11.4.0"
+  },
+  "scripts": {
+    "prepublish": "minify calculators.js > calculators-min.js && minify calculators.css > calculators-min.css"
   }
 }

@@ -1,10 +1,9 @@
 var Calculator = (function () {
   this.libraries = {
-    jQuery: '//code.jquery.com/jquery-2.1.3.min.js',
-    jsApi: '//www.google.com/jsapi',
-    css: 'calculators.css'
+    jQuery: 'https://code.jquery.com/jquery-3.7.1.min.js',
+    jsApi: 'https://www.google.com/jsapi',
+    css: 'https://mtg-calculators.s3.amazonaws.com/calculators-min.css'
   }
-  // css: 'https://home.ca/static/css/calculators.css'
 
   this.draws = { mortgage: false, affordability: false }
   this.chart = false
@@ -641,10 +640,10 @@ var Calculator = (function () {
     }
     this.affordability.$form = jQuery(
       '<form> \
-      <div class="calculator-row"><i alt="The combined amount of income the borrowers earn before taxes or other deductions. This may also include spousal or child support payments received">i</i><label><b>Gross Income</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="income" size="8" /></label></div> \
-      <div class="calculator-row"><i alt="The property tax on the home you want to buy broken down on a monthly basis">i</i><label><b>Property Taxes</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="propertyTaxes" size="8" /></label></div> \
-      <div class="calculator-row"><i alt="Input the monthly condominium fee for the home you want to buy. Only half of it will be taken into consideration">i</i><label><b>Condominium Fees</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="condoFees" size="8" /></label></div> \
-      <div class="calculator-row"><i alt="The estimated monthly heating cost for the home you want to buy">i</i><label><b>Heating Costs</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="heatingCost" size="8" /></label></div> \
+      <div class="calculator-row"><i alt="The combined amount of income the borrowers earn before taxes or other deductions. This may also include spousal or child support payments received">i</i><label><b>Gross Income (Per Month)</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="income" size="8" /></label></div> \
+      <div class="calculator-row"><i alt="The property tax on the home you want to buy broken down on a monthly basis">i</i><label><b>Property Taxes (Per Month)</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="propertyTaxes" size="8" /></label></div> \
+      <div class="calculator-row"><i alt="Input the monthly condominium fee for the home you want to buy. Only half of it will be taken into consideration">i</i><label><b>Condominium Fees (Per Month)</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="condoFees" size="8" /></label></div> \
+      <div class="calculator-row"><i alt="The estimated monthly heating cost for the home you want to buy">i</i><label><b>Heating Costs (Per Month)</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="heatingCost" size="8" /></label></div> \
       <div class="calculator-row"><i alt="The combined monthly payment obligations the borrowers owe or could be responsible for on all loans and credit card balances">i</i><label><b>Borrowing Payments</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="loans" size="8" /></label></div> \
       <div class="calculator-row"><i alt="The amount of money you have saved for a down payment to buy a home">i</i><label><b>Down Payment</b>$ <input style="color: rgb(4, 4, 4);" type="text" name="downPayment" size="8" /></label></div> \
       <div class="calculator-row"><i alt="The desired product">i</i><label><b>Product</b><select style="color: rgb(4, 4, 4);" name="product"><option value="custom">Custom Rate</option></select></label></div> \
@@ -663,11 +662,6 @@ var Calculator = (function () {
       )
       this.affordability.$result.append(this.affordability.$chart)
     }
-    this.affordability.$container.append(
-      '<div class="calculator-footer"><div class="calculator-link">' +
-        this.affordability.footer_link +
-        '</div>Powered by <a href="http://www.home.ca/" onclick="return !window.open(this.href)">home.ca</a></div>'
-    )
     jQuery('input, select', this.affordability.$form).val(function () {
       if (Calculator.affordability[this.name] != undefined) {
         return Calculator.affordability[this.name]
@@ -937,11 +931,6 @@ var Calculator = (function () {
     } else {
       this.ownership.$form.css('width', '100%')
     }
-    this.ownership.$container.append(
-      '<div class="calculator-footer"><div class="calculator-link">' +
-        this.ownership.footer_link +
-        '</div>Powered by <a href="http://www.home.ca/" onclick="return !window.open(this.href)">home.ca</a></div>'
-    )
     jQuery('input, select', this.ownership.$form).val(function () {
       if (Calculator.ownership[this.name]) {
         return Calculator.ownership[this.name]
